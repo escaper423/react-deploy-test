@@ -1,0 +1,20 @@
+.todo-list-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-list-column{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    height: auto;
+}
+
+.todo-list-item-delete{
+    position: relative;
+    float: right;
+    right: 0;
+    cursor:pointer;
+}

@@ -1,0 +1,58 @@
+#create-task-modal{
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    background-color: rgba(0.1,0.1,0.1,0.4);
+}
+
+.create-task-container-close{
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
+
+.create-task-container-close:hover{
+    color: #ffffff;
+    filter: drop-shadow(1px 1px 2px #aec3fe);
+    transition: .1s;
+}
+
+.create-task-container-cannot-text
+{
+    color: red;
+}
+.create-task-container-confirm
+{
+    background-color: #444444;
+    border:3px;
+    float: right;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #eeeeee;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.create-task-container-confirm:hover{
+    background-color: #888888;
+}
+
+.create-task-container-confirm:active{
+    background-color: #53c65a;
+}
+
+.create-task-container-title{
+    width: 100%;
+    border: 0;
+    color:#eeeeee;
+    border:0;
+    background-color: #333;
+}
