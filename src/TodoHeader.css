@@ -1,5 +1,5 @@
 .todo-header-container{
-    width: 800px;
+    width: 80%;
     max-height: 200px;
     display: inline-block;
     white-space: nowrap;
@@ -11,12 +11,10 @@
     position: absolute;
     right: 15px;
     float: right;
-    alt: "Night/Day mode";
 }
 
 .todo-header-btn{
     width: 100px;
-    min-width: 150px;
     height: 25px;
     background-color: #888888;
     color: #d3d3d3;
@@ -46,3 +44,10 @@
     transform: scale(1.2,1.2), translate(5px,5px);
 }
 
+@media screen and (max-width: 800px){
+    .todo-header-navbar{
+        display: block;
+        position: static;
+        width: 100%;
+    }
+}

@@ -7,8 +7,10 @@
 
 .todo-list-column{
     width: 100%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
     padding: 5px 0;
-    font-size: 18px;
+    font-size: 16px;
     height: auto;
 }
 
@@ -16,5 +18,13 @@
     position: relative;
     float: right;
     right: 0;
+    size: 2rem;
     cursor:pointer;
+}
+
+@media screen and (max-width: 600px){
+    .todo-list-container{
+        display: block;
+        padding: 10px;
+    }
 }

@@ -35,9 +35,9 @@ export default function TodoHeader({ todoList, setTodoList, inputText, setInputT
                     </nav>
                 </IconContext.Provider>
                 <div className="todo-header-container">
-                    <h1>Trolling List</h1>
-                    <p className="textxt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit..."</p>
-                    <button className="todo-header-btn" onClick={() => setOpened(true)}>Create Task Group</button>
+                    <h1>Todo List Tutorial</h1>
+                    <p className="textxt">Press 'Create Task' to add a todo task</p>
+                    <button className="todo-header-btn" onClick={() => setOpened(true)}>Create Task</button>
                 </div>
             </div>
         </>

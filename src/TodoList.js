@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GetTheme } from './App';
 import './TodoBody.css';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import _ from "lodash";
-import { BsEye, BsX } from "react-icons/bs";
+import { BsX } from "react-icons/bs";
+import MediaQuery from './MediaQuery';
 
 function TodoList({todoList, setTodoList}) {
 
@@ -32,14 +33,16 @@ function TodoList({todoList, setTodoList}) {
         console.log("clicked");
         setTodoList(prev => {
             prev = {...prev}
-            prev[key].items = prev[key].items.filter(item => item.id != id);
+            prev[key].items = prev[key].items.filter(item => item.id !== id);
             return prev;
         })
     }
-
+    const isSmallScreen = MediaQuery('(max-width: 800px)');
     const theme = GetTheme();
     const listStyle = {
-        width: '20%',
+        width: isSmallScreen?'95%':'25%',
+        display: isSmallScreen? 'block': 'inline-block',
+        margin: isSmallScreen? '10px':'0',
         height: '30%',
         backgroundColor: theme ? '#555' : '#ccc',
         color: theme ? '#ccc' : '#555',

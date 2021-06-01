@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './CreateTask.css';
 import { BsX } from "react-icons/bs";
@@ -10,6 +10,7 @@ export default function CreateTask({
     todoList, setTodoList
 }) {
     const modalPortal = document.getElementById("modal-portal");
+    
     const modalStyle = {
         backgroundColor: theme ? '#555' : '#aaa',
         color: theme ? '#ccc' : '#333',
@@ -19,7 +20,7 @@ export default function CreateTask({
         top: '20%',
         left: '50%',
         padding: '2rem',
-        width: '30vw',
+        width: Math.min('30vw', '300px'),
         display: 'block',
         transform: 'translateX(-50%)',
         zIndex: 1000
